@@ -6,8 +6,29 @@ class CallsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // ignore: avoid_unnecessary_containers
-    return const Center(
-      child: Text('CallsScreen'),
+    return Column(
+      children: [
+        BottomNavigationBar(
+          currentIndex: 1,
+          onTap: (int a){},
+          items:const [
+            BottomNavigationBarItem(
+              icon: Icon(null),
+              label: 'All',
+              
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(null),
+              label: 'FAVORITES',
+              backgroundColor: Colors.red
+            ),
+              BottomNavigationBarItem(
+              icon: Icon(null),
+              label: 'MISSED'
+            ),
+          ],
+        )
+      ],
     );
   }
 }
